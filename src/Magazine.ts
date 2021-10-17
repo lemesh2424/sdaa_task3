@@ -1,22 +1,8 @@
 import { Item } from "./Item";
-import { Pages } from "./pages";
-
+import {Pages} from "./Pages";
 export class Magazine extends Item {
-    private pages: Pages;
-    private title: string;
-
     constructor(title: string, pages: Pages) {
-        super();
-        this.title = title;
-        this.pages = pages;
-    }
-
-    public getTitle(): string {
-        return this.title;
-    }
-
-    public setTitle(title: string): void {
-        this.title = title;
+        super(pages, title);
     }
 
     public toString(): string {
