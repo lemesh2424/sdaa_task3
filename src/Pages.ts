@@ -1,7 +1,7 @@
 import { Page } from "./Page";
 
 export class Pages {
-    private pages: Array<Page>;
+    private readonly pages: Array<Page>;
 
     constructor(pages: Array<Page>) {
         this.pages = pages;
